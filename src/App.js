@@ -1,23 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.less';
+import { Button } from 'antd';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          hello  https://github.com/dxq2641249797/music-fe.git
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Button type="primary">Button</Button>
       </header>
     </div>
   );
