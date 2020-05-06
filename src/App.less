@@ -1,6 +1,27 @@
 @import '~antd/dist/antd.css';
+html{
+  height: 100%;
+  font-size: 50px;
+  /* 7.5rem=100vw */
+  font-size:13.33333333vw;
+  margin: 0 auto;
+}
+@media (max-width: 320px) {
+  html,body {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html,body {
+    font-size: 32px;
+  }
+}
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .App-logo {
@@ -15,14 +36,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -36,4 +50,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+.bodyLeft{
+  width: 30%;
+  height: 100%;
+  background-color: pink;
+  opacity: 0.5;
+  min-height: 100vh;
 }
